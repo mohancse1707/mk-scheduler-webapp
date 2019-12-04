@@ -42,11 +42,11 @@ Make sure to install below tools and set the path in the system before proceedin
 
 #### Linux
 
-> export PATH=path/to/JDK/bin;$PATH
+> export PATH=path/to/JDK/bin:$PATH
 
 > export JAVA_HOME=path/to/JDK
 
-> export PATH=path/to/Maven/bin;$PATH
+> export PATH=path/to/Maven/bin:$PATH
 
 ### Limitations 
 
