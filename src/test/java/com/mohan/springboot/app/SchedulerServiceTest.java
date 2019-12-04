@@ -71,33 +71,33 @@ public class SchedulerServiceTest {
     @Rollback(false)
     public void scheduleNewJobTest() {
         JobSchedulerDetailsDTO jobSchedulerDetailsDTO = new JobSchedulerDetailsDTO();
-        jobSchedulerDetailsDTO.setFrequency(60L);
+        jobSchedulerDetailsDTO.setFrequency("0 * * ? * *");
         jobSchedulerDetailsDTO.setJobClass("com.mohan.springboot.app.jobs.SimpleJob");
         jobSchedulerDetailsDTO.setJobName("SIMPLEJOB");
         jobSchedulerDetailsDTO.setJobGroup("SIMPLEJOBGROUP");
-        jobSchedulerDetailsDTO.setJobPriority(5l);
+        jobSchedulerDetailsDTO.setPriority(5l);
         jobSchedulerDetailsDTO.setJobStatus("CREATED");
         jobSchedulerDetailsDTO.setStartDate(new Date());
         boolean resultOne = schedulerService.scheduleNewJob(jobSchedulerDetailsDTO);
         Assert.assertTrue(resultOne);
 
         JobSchedulerDetailsDTO jobSchedulerDetailsDTO2 = new JobSchedulerDetailsDTO();
-        jobSchedulerDetailsDTO2.setFrequency(60L);
+        jobSchedulerDetailsDTO2.setFrequency("0 */2 * ? * *");
         jobSchedulerDetailsDTO2.setJobClass("com.mohan.springboot.app.jobs.SimpleJob");
         jobSchedulerDetailsDTO2.setJobName("SIMPLEJOB2");
         jobSchedulerDetailsDTO2.setJobGroup("SIMPLEJOBGROUP");
-        jobSchedulerDetailsDTO2.setJobPriority(5l);
+        jobSchedulerDetailsDTO2.setPriority(5l);
         jobSchedulerDetailsDTO2.setJobStatus("CREATED");
         jobSchedulerDetailsDTO2.setStartDate(new Date());
         boolean resultTwo = schedulerService.scheduleNewJob(jobSchedulerDetailsDTO2);
         Assert.assertTrue(resultTwo);
 
         JobSchedulerDetailsDTO jobSchedulerDetailsDTO3 = new JobSchedulerDetailsDTO();
-        jobSchedulerDetailsDTO2.setFrequency(60L);
+        jobSchedulerDetailsDTO2.setFrequency("0 */2 * ? * *");
         jobSchedulerDetailsDTO2.setJobClass("com.mohan.springboot.app.jobs.SimpleJob");
         jobSchedulerDetailsDTO2.setJobName("SIMPLEJOB3");
         jobSchedulerDetailsDTO2.setJobGroup("SIMPLEJOBGROUP");
-        jobSchedulerDetailsDTO2.setJobPriority(5l);
+        jobSchedulerDetailsDTO2.setPriority(5l);
         jobSchedulerDetailsDTO2.setJobStatus("CREATED");
         jobSchedulerDetailsDTO2.setStartDate(new Date());
         boolean resultThree = schedulerService.scheduleNewJob(jobSchedulerDetailsDTO2);
@@ -109,11 +109,11 @@ public class SchedulerServiceTest {
     public void updateScheduleJobTest() {
         JobSchedulerDetailsDTO jobSchedulerDetailsDTO = new JobSchedulerDetailsDTO();
         jobSchedulerDetailsDTO.setId(2l);
-        jobSchedulerDetailsDTO.setFrequency(600L);
+        jobSchedulerDetailsDTO.setFrequency("0 * * ? * *");
         jobSchedulerDetailsDTO.setJobClass("com.mohan.springboot.app.jobs.SimpleJob");
         jobSchedulerDetailsDTO.setJobName("SIMPLEJOB");
         jobSchedulerDetailsDTO.setJobGroup("SIMPLEJOBGROUP");
-        jobSchedulerDetailsDTO.setJobPriority(5l);
+        jobSchedulerDetailsDTO.setPriority(5l);
         jobSchedulerDetailsDTO.setJobStatus("CHANGED");
         jobSchedulerDetailsDTO.setStartDate(new Date());
         boolean result = schedulerService.updateScheduleJob(jobSchedulerDetailsDTO);
@@ -124,11 +124,11 @@ public class SchedulerServiceTest {
     public void deleteJobTest() {
         JobSchedulerDetailsDTO jobSchedulerDetailsDTO = new JobSchedulerDetailsDTO();
         jobSchedulerDetailsDTO.setId(3l);
-        jobSchedulerDetailsDTO.setFrequency(600L);
+        jobSchedulerDetailsDTO.setFrequency("0 * * ? * *");
         jobSchedulerDetailsDTO.setJobClass("com.mohan.springboot.app.jobs.SimpleJob");
         jobSchedulerDetailsDTO.setJobName("SIMPLEJOB");
         jobSchedulerDetailsDTO.setJobGroup("SIMPLEJOBGROUP");
-        jobSchedulerDetailsDTO.setJobPriority(5l);
+        jobSchedulerDetailsDTO.setPriority(5l);
         jobSchedulerDetailsDTO.setJobStatus("CANCELLED");
         jobSchedulerDetailsDTO.setStartDate(new Date());
         boolean result = schedulerService.deleteJob(jobSchedulerDetailsDTO);
