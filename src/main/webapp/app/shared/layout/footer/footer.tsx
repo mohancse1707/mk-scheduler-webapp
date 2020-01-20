@@ -1,4 +1,3 @@
-
 import './footer.scss';
 
 import * as React from 'react';
@@ -10,7 +9,7 @@ const Footer = props => (
     <Row>
       <div className="col-sm-9">
         <div className="copyRight">
-          <p>Copyright © 2019 MOHANKUMAR. All rights reserved.</p>
+          <p>Powerd by MOHANKUMAR. All rights reserved.</p>
         </div>
       </div>
       <div className="col-sm-3">

@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { Translate } from 'react-jhipster';
 
@@ -29,7 +28,7 @@ export const BrandIcon = props => (
 export const Brand = props => (
   <NavbarBrand tag={Link} to="/" className="brand-logo">
     <span className="brand-title">
-      <Translate contentKey="global.title">ITPRISM</Translate>
+      <Translate contentKey="global.title">SCHEDULER</Translate>
     </span>
   </NavbarBrand>
 );

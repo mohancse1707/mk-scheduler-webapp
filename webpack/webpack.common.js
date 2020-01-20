@@ -107,7 +107,7 @@ module.exports = options => ({
       template: './src/main/webapp/index.html',
       chunksSortMode: 'dependency',
       inject: 'body',
-      baseUrl: options.env === 'development'?'/':'/itprism/'
+      baseUrl: options.env === 'development'?'/':'/scheduler/'
     }),
 
     new MergeJsonWebpackPlugin({

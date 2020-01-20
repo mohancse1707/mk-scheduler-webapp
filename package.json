@@ -1,7 +1,7 @@
 {
   "name": "mk-scheduler",
   "version": "0.0.0",
-  "description": "Description for ITPrism",
+  "description": "Description for Scheduler Application",
   "private": true,
   "license": "UNLICENSED",
   "cacheDirectories": [
@@ -137,7 +137,7 @@
     "prettier:format": "npm prettier --write 'src/**/*.{ts,tsx,css,scss}'",
     "lint": "tslint --project tsconfig.json -e 'node_modules/**'",
     "lint:fix": "npm run lint -- --fix",
-    "cleanup": "rimraf dist && rimraf src/main/resources/static/",
+    "cleanup": "rimraf dist",
     "e2e": "protractor src/test/javascript/protractor.conf.js",
     "postinstall": "webdriver-manager update --gecko false",
     "start": "npm run webpack:dev",

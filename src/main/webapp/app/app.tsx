@@ -13,10 +13,8 @@ import ErrorBoundary from 'app/shared/error/error-boundary';
 import AppRoutes from 'app/routes';
 export interface IAppProps extends StateProps, DispatchProps {}
 
-export class App extends React.Component<IAppProps> {
-  componentDidMount() {
-
-  }
+export class App extends React.Component<IAppProps, any> {
+  componentDidMount() {}
 
   render() {
     const paddingTop = '60px';
@@ -24,10 +22,7 @@ export class App extends React.Component<IAppProps> {
       <Router>
         <main>
           <ErrorBoundary>
-            <Header
-              currentLocale={this.props.currentLocale}
-              onLocaleChange={this.props.setLocale}
-            />
+            <Header currentLocale={this.props.currentLocale} onLocaleChange={this.props.setLocale} />
           </ErrorBoundary>
           <div className="contentBg">
             <div className="borderArround">

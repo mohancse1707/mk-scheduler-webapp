@@ -21,7 +21,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
     main: './src/main/webapp/app/index'
   },
   output: {
-    path: utils.root('target/www'),
+    path: utils.root('dist'),
     filename: 'app/[name].[hash].bundle.js',
     chunkFilename: 'app/[id].[hash].chunk.js'
   },

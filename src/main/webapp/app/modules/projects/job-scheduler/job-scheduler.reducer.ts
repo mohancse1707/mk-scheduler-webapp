@@ -4,7 +4,7 @@ import { REQUEST, SUCCESS, FAILURE } from 'app/shared/reducers/action-type.util'
 import { IJobSchedulerDetails } from 'app/modules/projects/job-scheduler/job-scheduler.model';
 import { defaultJobSchedulerDetailsResponse } from 'app/modules/projects/job-scheduler/job-scheduler-response.model';
 
-const baseUrl = '/app/scheduler/rest';
+const baseUrl = 'app/scheduler/rest';
 
 export const ACTION_TYPES = {
   FETCH_ALL_JOB_SCHEDULERS: 'jobScheduler/FETCH_ALL_JOB_SCHEDULERS',
@@ -73,12 +73,7 @@ export default (state: JobSchedulerDetailsState = initialState, action): JobSche
   }
 };
 
-export const getAllJobSchedulers = (
-  jobName,
-  priority,
-  startIndex,
-  pageSize
-) => {
+export const getAllJobSchedulers = (jobName, priority, startIndex, pageSize) => {
   let requestUrl = `${baseUrl}/fetchAllJobSchedulers?startIndex=${startIndex}&pageSize=${pageSize}`;
   if (jobName) {
     requestUrl += `&jobName=${jobName}`;

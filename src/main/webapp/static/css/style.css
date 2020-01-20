@@ -27,7 +27,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 .contentBg {
-  width: 960px; /*Same as exsting ITPRISM*/
+  width: 960px;
   margin: 0 auto;
 }
 .borderArround {
@@ -67,7 +67,7 @@
 }
 /*section part1*/
 .mainheader {
-  color: #18b5e8;
+  color: lightseagreen;
   padding: 1% 0 0% 0;
   font-family: EK03Plain, ekB, Arial, Helvetica, sans-serif;
   font-size: 24px;
@@ -176,7 +176,7 @@ select.form-control:not([size]):not([multiple]) {
 .table thead {
   font-size: 11px;
   line-height: 1em;
-  background: url(../images/tableHeaderBg1.png);
+  background-color: lightseagreen;
   background-position: top left;
   color: #fff;
   padding: 1px 1px 1px 7px;
@@ -414,13 +414,13 @@ h3.theMohanGroup {
   padding: 0 10px;
 }
 .header .HelpIcon a {
-  color: #003399;
+  color: lightseagreen;
   font-weight: 700;
   background: url(../images/icon-help.png) no-repeat 5px 0;
   padding: 2px 3px 3px 25px;
 }
 .header .HelpIcon a:hover {
-  color: #0281c0;
+  color: lightseagreen;
 }
 
 .search-form-div {
@@ -470,7 +470,7 @@ mark,
   background-color: #fcf8e3;
 }
 
-.itprism-err-msg {
+.app-err-msg {
   line-height: 2;
   font-family: Arial, Verdana, sans-serif;
   font-size: 12px;

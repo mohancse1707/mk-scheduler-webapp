@@ -59,7 +59,7 @@ module.exports = webpackMerge(commonConfig({ env: ENV }), {
         '/h2-console',
         '/auth'
       ],
-      target: 'http://127.0.0.1:8080',
+      target: 'http://127.0.0.1:8080/scheduler',
       secure: false,
       headers: { host: 'localhost:9000' }
     }],

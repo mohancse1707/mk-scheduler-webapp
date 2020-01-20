@@ -1,4 +1,3 @@
-
 import { isPromise, translate } from 'react-jhipster';
 import { toast } from 'react-toastify';
 
@@ -73,7 +72,7 @@ export default () => next => action => {
                   const fieldError = fieldErrors[i];
                   // convert 'something[14].other[4].id' to 'something[].other[].id' so translations can be written to it
                   const convertedField = fieldError.field.replace(/\[\d*\]/g, '[]');
-                  const fieldName = translate(`itPrismApp.${fieldError.objectName}.${convertedField}`);
+                  const fieldName = translate(`schedulerApp.${fieldError.objectName}.${convertedField}`);
                   addErrorAlert(`Error on field "${fieldName}"`, `error.${fieldError.message}`, { fieldName });
                 }
               } else if (data !== '' && data.message) {
