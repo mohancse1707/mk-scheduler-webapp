@@ -66,7 +66,7 @@ After setting Java & Maven in path, execute the below command to start the appli
 
 > mvn spring-boot:run
 
-once started hit this URL: [http://localhost:8080/#/](http://localhost:8080/#/) 
+once started hit this URL: [http://localhost:8080/scheduler/#/](http://localhost:8080/scheduler/#/) 
 
 
 [Direct Download]: https://github.com/mohancse1707/mk-scheduler-webapp/archive/master.zip
