@@ -68,6 +68,13 @@ After setting Java & Maven in path, execute the below command to start the appli
 
 once started hit this URL: [http://localhost:8080/scheduler/#/](http://localhost:8080/scheduler/#/) 
 
+### For Development & Contributions
+
+Execute the below commands in separate terminal. 
+
+> Terminal#1: <mk-scheduler-webapp> mvn spring-boot:run
+
+> Terminal#2: <mk-scheduler-webapp> npm install && npm run start
 
 [Direct Download]: https://github.com/mohancse1707/mk-scheduler-webapp/archive/master.zip
 [Maven]:https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.5.4/apache-maven-3.5.4-bin.zip
